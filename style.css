@@ -1,5 +1,61 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Catamaran', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px 0 100px;
+}
+.logo{
+    font-family: 'Pompiere', cursive;
+    margin-right: 50%;
+    font-size: 25px;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li{
+    list-style: none;
+}
+.nav-bar ul li a{
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50px;
+    padding: 10px 25px;
+    transition: 0.4s;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar ul li a:hover{
+    color: #000;
+    background:#fefefe;
+    text-shadow: none;
+}
+
+.home-title {
+    font-family: 'Yeseva One', cursive;
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    top: 25%;
+    margin: 60px 0 0 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-desc{
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    top: 42%;
+    margin: 60px 0 0 80px;
+    width: 38%;
+    text-align: justify;
 }

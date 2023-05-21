@@ -85,6 +85,20 @@ header{
     line-height: 25px;
 }
 
+.about{
+    height: 100vh;
+    
+}
+
+.add_info{
+    height: 100vh;
+    background-color:#000;
+    color: white;
+}
+
+.contact{
+    height: 100vh;
+}
 @media only screen and (max-width: 1320px) {
     header{
         padding: 0 50px;

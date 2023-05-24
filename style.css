@@ -12,7 +12,9 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 20px 0 100px;
-    background-color: transparent;
+    background: transparent;
+    position: fixed;
+    border-bottom: 1px solid #fefefe;
 }
 .logo{
     font-family: 'Pompiere', cursive;
@@ -60,7 +62,7 @@ header{
     object-fit: cover;
     object-position: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     
 }
 .home-title {

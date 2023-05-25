@@ -14,6 +14,7 @@ header{
     padding: 0 20px 0 100px;
     background: transparent;
     position: fixed;
+    z-index: 100;
     /* border-bottom: 1px solid #fefefe; */
 }
 .logo{
@@ -24,6 +25,7 @@ header{
     font-size: 25px;
     text-decoration: none;
     transition: transform 0.3s;
+    
 }
 .logo:hover{
     color:#000;
@@ -62,16 +64,13 @@ header{
     text-shadow: none;
 }
 .home{
+    background-image: url("img/home-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
-    display: flex;
-    top: 40%;
-}
-.home img{
-    object-fit: cover;
-    object-position: center;
-    height: 100vh;
-    width: 100%;
-    
+    position: relative;
+    z-index: -100;
+    /* display: flex; */
 }
 
 .home-content {
@@ -87,6 +86,7 @@ header{
 .home-content h4{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    
 }
 .home-content h1{
     font-size: 50px;
@@ -114,7 +114,8 @@ header{
     margin-top: 90px;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
+     
 }
 
 .links li{
@@ -134,6 +135,7 @@ header{
     align-items: center;
     border-radius: 50%;
     transition: 0.2s ease-in-out;
+    
 }
 .links li a:hover{
     color: #fefefe;
@@ -141,8 +143,9 @@ header{
     transform: translateY(-5px);
 }
 .about{
+    position: relative;
     height: 100vh;
-    
+    z-index: 1000;
 }
 
 .add_info{
@@ -154,6 +157,12 @@ header{
 .contact{
     height: 100vh;
 }
+/* @media (width > 980px) {
+    .logo{
+        position: sticky;
+        mix-blend-mode: difference;
+    }
+} */
 @media only screen and (max-width: 1320px) {
     header{
         padding: 0 50px;
@@ -167,7 +176,7 @@ header{
     }
     body{
         background-size: 120%;
-        background-position-x: 0;
+        /* background-position-x: 0; */
     }
 }
 @media only screen and (max-width: 768px) {

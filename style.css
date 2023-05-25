@@ -78,31 +78,68 @@ header{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #fff;
-    font-size: 15px;
+    font-size: 20px;
     position: absolute;
     width: 40%;
-    margin: 250px 0 0 80px;
+    margin: 250px 0 0 100px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .home-content h4{
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 .home-content h1{
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 900;
     line-height:1;
-    margin-bottom: 30px;
+    margin: 20px 0 10px;
+    /* margin-bottom: 30px; */
+}
+.home-content h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
 }
 .home-desc{
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
     font-weight: 200;
+    margin: 20px 0;
     position: absolute;
     text-align: justify;
-    margin-top: 100;
-    line-height: 25px;
 }
 
+.links{
+    position: absolute;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.links li{
+    list-style-type: none;
+}
+
+.links li a{
+    font-size: 20px;
+    color: black;
+    display: inline-block;
+    margin-right: 15px;
+    background: #fefefe;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+.links li a:hover{
+    color: #fefefe;
+    background:rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
 .about{
     height: 100vh;
     
@@ -110,7 +147,7 @@ header{
 
 .add_info{
     height: 100vh;
-    background-color:#000;
+    background-color:#bebebe;
     color: white;
 }
 

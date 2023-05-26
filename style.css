@@ -288,10 +288,6 @@ header{
     .portfolio-grid{
         grid-template-columns: repeat(2, 1fr);
     }
-    /* .portfolio-grid > div{
-        /* height: 200px; */
-        /* overflow:  hidden;
-    } */
     .portfolio-grid > div img{
         height: 100%;
         object-fit: cover;
@@ -427,7 +423,7 @@ header{
     color: #000;
 }
 
-@media(max-width: 1295px){
+ @media(max-width: 1295px){
     .wrapper{
         width: 90%;
         padding: 30px 35px 40px 35px;
@@ -460,28 +456,4 @@ header{
         width: 100%;
         margin-left: 0;
     }
-}
-
-
-@media only screen and (max-width: 1320px) {
-    header{
-        padding: 0 50px;
-    }
-    
-}
-
-@media only screen and (max-width: 900px) {
-    header{
-        padding: 0 30px;
-    }
-    body{
-        background-size: 120%;
-    }
-}
-@media only screen and (max-width: 768px) {
-    body{
-        background-size: 200%;
-        background-position-x: -500px;
-    }
-    
 }

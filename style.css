@@ -47,7 +47,7 @@ header{
 
 }
 .nav-bar ul li a{
-    display: block;
+    display: inline-block;
     color: #fff;
     border-radius: 50px;
     padding: 10px 20px;
@@ -154,10 +154,11 @@ header{
     background: #d3d3d3;
     padding: 70px 60px;
     text-align: center;
-    
+    border-radius: 10%;
 }
 .about-left-content{
     box-shadow: 0px 0px 18px -1px rgba(0, 0, 0,0.39);
+    border-radius: 10%;
 }
 .about-img img{
     width: 150px;
@@ -197,7 +198,7 @@ header{
 }
 .about-right{
     font-family: "Poppins", sans-serif;
-    background: #fff;
+    background-color: #fefefe;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -208,12 +209,14 @@ header{
 }
 .about-right h1{
     font-size: 50px;
+    font-weight: 900;
 }
 .about-right h1 span{
     color: #bebebe;
 }
 
 .about-right h2{
+    
     font-weight: 600;
 }
 .about-desc{
@@ -236,12 +239,65 @@ header{
         right: -50px;
     }
 }
+@media screen and (max-width: 992px) {
+    .about-container{
+        height: 200vh;
+    }
+}
+.title{
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+}
 
-.add_info{
+.title h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    padding-bottom: 50px;
+}
+.portfolio-container{
+    min-height: 100vh;
+    padding: 7rem;
     height: 100vh;
     background-color:#000;
     color: white;
+
 }
+.portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.portfolio-grid > div{
+    transition: all 300ms ease-in-out;
+}
+.portfolio-grid > div:hover{
+    transform: scale(0.9);
+}
+
+.portfolio-grid > div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+@media(min-width: 576px){
+    .portfolio-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .portfolio-grid > div{
+        /* height: 200px; */
+        overflow:  hidden;
+    }
+    .portfolio-grid > div img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
 
 .contact{
     height: 100vh;
@@ -260,7 +316,6 @@ header{
     }
     body{
         background-size: 120%;
-        /* background-position-x: 0; */
     }
 }
 @media only screen and (max-width: 768px) {

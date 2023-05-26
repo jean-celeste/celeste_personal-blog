@@ -1,3 +1,4 @@
+// PARALLAX EFFECT
 const parallax_home = document.getElementById("home");
 
 window.addEventListener("scroll", function(){
@@ -6,6 +7,7 @@ window.addEventListener("scroll", function(){
 
 });
 
+//CONTACT ME
 var btn = document.getElementById('btn');
 btn.addEventListener('click', function(e){
     e.preventDefault()
@@ -16,7 +18,7 @@ btn.addEventListener('click', function(e){
 
     Email.send({
         SecureToken : "e2efcd08-10e7-4a28-9c07-a97f3b865a7c",
-        To : 'jeancarlotarrobago.celeste@bicol-u.edu.ph',
+        To : 'celestecarljean17@gmail.com',
         Subject: "From Website",
         From : email,
         Body : body

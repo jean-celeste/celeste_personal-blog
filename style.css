@@ -258,12 +258,12 @@ header{
     padding-bottom: 50px;
 }
 .portfolio-container{
-    min-height: 100vh;
+    display: flex;
+    height: 100%;
     padding: 7rem;
-    height: 100vh;
     background-color:#000;
     color: white;
-
+    
 }
 .portfolio-grid{
     display: grid;

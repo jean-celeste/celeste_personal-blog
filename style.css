@@ -322,6 +322,7 @@ header{
     padding: 10px 15px;
     border-radius: 50%;
     transition: 0.4s;
+    text-decoration: none;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .fa-solid:hover{

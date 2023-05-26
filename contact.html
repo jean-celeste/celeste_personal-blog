@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jean Carlo Celeste Personal Profile Blog</title>
         <link rel="stylesheet" href="style.css">
-        <script src="main.js"></script>
+        
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,21 +51,23 @@
                 
                 <form action = "#">
                     <div class="input-box">
-                        <input type="text" placeholder="Enter Your Name">
+                        <input type="text" placeholder="Enter Your Name" id="name">
                     </div>
 
                     <div class="input-box">
-                        <input type="text" placeholder="Enter Your Email">
+                        <input type="email" placeholder="Enter Your Email" id="email">
                     </div>
 
                     <div class="input-box message">
-                        <textarea></textarea>
+                        <textarea id="message"></textarea>
                     </div>
-                    <div class="btn">
+                    <div class="btn" id="btn">
                         <input type="button" value="Send Now">
                     </div>
                 </form>
                 </div>
             </div>
         </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="main.js"></script>
     </body>
